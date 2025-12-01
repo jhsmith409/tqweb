@@ -5,3 +5,8 @@ _site/
 vendor/
 .bundle/
 Gemfile.lock
+TeraQuist_Logo.png
+
+# Development files
+CLAUDE.md
+.claude/
