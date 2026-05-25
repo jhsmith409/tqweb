@@ -11,3 +11,17 @@ defaults:
       path: ""
     values:
       layout: default
+
+# Jekyll excludes underscore-prefixed files by default; Cloudflare Pages needs
+# _headers in the _site output to apply the CSP/security headers.
+include:
+  - _headers
+
+# Keep dev-only files out of the published site.
+exclude:
+  - CLAUDE.md
+  - .claude
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md

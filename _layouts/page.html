@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #ffffff;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+    .page a.home {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 0.875rem;
+      color: #2c5282;
+    }
+    .page h1 {
+      font-weight: 300;
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+    }
+    .page h2 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .page p,
+    .page ul {
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    .page ul {
+      padding-left: 1.5rem;
+    }
+    .page li {
+      margin-bottom: 0.5rem;
+    }
+    .page a {
+      color: #2c5282;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="home" href="/">&larr; Back to TeraQuist</a>
+    {{ content }}
+  </main>
+</body>
+</html>
